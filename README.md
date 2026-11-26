@@ -10,6 +10,12 @@ COSMIC panel applet that shows battery levels of connected devices
 Built with [libcosmic](https://github.com/pop-os/libcosmic) and
 [zbus](https://github.com/dbus2/zbus).
 
+## Screenshots
+
+| Panel icon | Popup |
+| --- | --- |
+| ![Panel icon](docs/screenshots/panel.png) | ![Popup listing devices](docs/screenshots/popup.png) |
+
 ## Install
 
 ```
