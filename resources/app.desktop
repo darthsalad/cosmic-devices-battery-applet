@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Device Batteries
+Comment=Battery levels of connected devices
+Type=Application
+Icon=battery-symbolic
+Exec=cosmic-applet-batteries
+Terminal=false
+Categories=COSMIC
+Keywords=COSMIC;battery;mouse;keyboard;
+NoDisplay=true
+X-CosmicApplet=true
+X-CosmicHoverPopup=Auto

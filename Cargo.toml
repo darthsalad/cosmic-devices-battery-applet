@@ -1,0 +1,21 @@
+[package]
+name = "cosmic-applet-batteries"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "COSMIC panel applet showing battery levels of connected devices"
+
+[dependencies]
+tokio = { version = "1.52", features = ["time", "macros"] }
+zbus = { version = "5.15", default-features = false, features = ["tokio"] }
+
+[dependencies.libcosmic]
+git = "https://github.com/pop-os/libcosmic.git"
+rev = "1f6dc991eaa5115a09be2505cc8a323e5b2b0bff"
+default-features = false
+features = ["applet", "applet-token", "tokio", "wayland"]
+
+[profile.release]
+lto = "thin"
+strip = true
+opt-level = "s"
